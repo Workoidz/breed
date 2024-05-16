@@ -1,0 +1,19 @@
+<turbo-frame id="image-frame">
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <%= form_with url: fetch_breed_path, id: "breed_form", local: false do |form| %>
+        <div class="input-group mb-3">
+          <%= form.text_field :breed, placeholder: "Enter dog breed", class: "form-control" %>
+          <div class="input-group-append">
+            <%= form.submit "Submit", class: "btn btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-6">
+      <div id="breed_info"></div>
+    </div>
+  </div>
+</div>
+</turbo-frame>

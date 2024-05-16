@@ -1,0 +1,10 @@
+<% if error %>
+  <div id="breed_info">
+    <p><%= error %></p>
+  </div>
+<% else %>
+  <div id="breed_info">
+    <h2><%= breed_name %></h2>
+    <img src="<%= image_url %>" alt="<%= breed_name %> image">
+  </div>
+<% end %>
